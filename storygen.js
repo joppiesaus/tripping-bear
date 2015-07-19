@@ -38,6 +38,7 @@ function randomExtension()
     }
 }
 
+// converts string t to "the " + t
 function the(t)
 {
     return "the " + t;
@@ -56,7 +57,7 @@ function action(executer, victim, action)
 // create sentence
 function cs(n)
 {
-    story += n + ".<br>";
+    story += n[0].toUpperCase() + n.substring(1) + ".<br>";
 }
 
 var story = "";
